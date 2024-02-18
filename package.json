@@ -3,13 +3,14 @@
   "type": "module",
   "module": "./src/index.ts",
   "scripts": {
+    "commit": "cz",
     "format": "bunx @biomejs/biome format --write .",
     "lint": "bunx @biomejs/biome lint .",
     "lint:apply": "bunx @biomejs/biome check --apply .",
     "lint:applyUnsafe": "bunx @biomejs/biome check --apply-unsafe .",
-    "compile": "bun run scripts/compile.ts",
-    "build": "bun run esbuild --bundle src/index.ts --outfile=build/build.js --minify",
-    "prod": "bun run scripts/obfuscate.ts"
+    "build": "bun build src/index.ts --outfile=build/build.js --minify",
+    "obfuscate": "bun run scripts/obfuscate.ts",
+    "compile": "bun run scripts/compile.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -18,10 +19,17 @@
     "@biomejs/biome": "1.5.3",
     "@types/bun": "latest",
     "chalk": "^5.3.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "javascript-obfuscator": "^4.1.0"
   },
   "dependencies": {
     "@types/web": "^0.0.139",
     "esbuild": "^0.20.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

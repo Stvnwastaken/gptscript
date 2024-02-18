@@ -1,14 +1,16 @@
+import { generateBookmarklet } from "../src/utils/generator.js"
 import fs from "node:fs"
 import chalk from "chalk"
-import { generateBookmarklet } from "../src/utils/generator.js"
 
 const bookmarklet = generateBookmarklet(
-	fs.readFileSync("./src/index.ts", "utf8"),
+  fs.readFileSync("./build/obfuscate/obfuscated.js", "utf8"),
 )
-fs.writeFile("./build/bookmarklet.ts", bookmarklet, (err) => {
-	if (err) {
-		chalk.red(`Error occured:${err}`)
-	} else {
-		chalk.green.bold("Compiled to bookmarklet, ready to build 🏗️!")
-	}
+fs.writeFile("./build/release/bookmarklet.js", bookmarklet, (err) => {
+  if (err) {
+    console.log(chalk.red("Error occured:" + err))
+  } else {
+    console.log(
+      chalk.green.bold("Compiled to bookmarklet, ready for production 🚀 !"),
+    )
+  }
 })

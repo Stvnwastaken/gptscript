@@ -7,3 +7,5 @@
 [o] Tags for prs
 [o] testing
 [o] ci/cd
+[o] releases via scripts
+[o] server and db tracking

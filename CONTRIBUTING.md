@@ -36,26 +36,26 @@ Linting (unsafe fixes);
 bun run lint:applyUnsafe
 ```
 
-Compile to bookmarklet:
-
-```bash
-bun run compile
-```
-
-Build bookmarklet (ts->js):
+Build and minify:
 
 ```bash
 bun run build
 ```
 
-Build for production (obfuscate):
+Obfuscate for production:
 
 ```bash
-bun run prod
+bun run obfuscate
+```
+
+Compile for production (prod js -> bookmarklet):
+
+```bash
+bun run compile
 ```
 
 Building in order:
 
-compile, build, prod
+build, prod, compile
 
 This project was created using `bun init` in bun v1.0.26. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
