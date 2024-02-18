@@ -6,3 +6,4 @@
 [o] Version releases
 [o] Tags for prs
 [o] testing
+[o] ci/cd
