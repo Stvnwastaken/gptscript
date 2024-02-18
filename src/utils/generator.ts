@@ -1,13 +1,13 @@
 function cleanCode(raw: string) {
-  return raw.trim()
+	return raw.trim()
 }
 
 function generateBookmarklet(code: string) {
-  const output: string = `javascript:${encodeURIComponent(
-    `(function(){${cleanCode(code)}})`,
-  )}`
+	const output: string = `javascript:${encodeURIComponent(
+		`(function(){${cleanCode(code)}})`,
+	)}`
 
-  return output
+	return output
 }
 
 export { generateBookmarklet }

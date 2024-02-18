@@ -4,7 +4,9 @@
   "module": "./src/index.ts",
   "scripts": {
     "format": "bunx @biomejs/biome format --write .",
-    "lint": "bunx @bioimejs/biome lint .",
+    "lint": "bunx @biomejs/biome lint .",
+    "lint:apply": "bunx @biomejs/biome check --apply .",
+    "lint:applyUnsafe": "bunx @biomejs/biome check --apply-unsafe .",
     "compile": "bun run scripts/compile.ts",
     "build": "bun run esbuild --bundle src/index.ts --outfile=build/build.js --minify",
     "prod": "bun run scripts/obfuscate.ts"

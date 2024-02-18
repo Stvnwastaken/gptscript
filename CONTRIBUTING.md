@@ -18,10 +18,22 @@ Formatting:
 bun run format
 ```
 
-Linting:
+Linting (check):
 
 ```bash
 bun run lint
+```
+
+Linting (safe fixes):
+
+```bash
+bun run lint:apply
+```
+
+Linting (unsafe fixes);
+
+```bash
+bun run lint:applyUnsafe
 ```
 
 Compile to bookmarklet:
@@ -41,5 +53,9 @@ Build for production (obfuscate):
 ```bash
 bun run prod
 ```
+
+Building in order:
+
+compile, build, prod
 
 This project was created using `bun init` in bun v1.0.26. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.

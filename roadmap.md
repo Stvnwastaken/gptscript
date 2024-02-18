@@ -5,3 +5,4 @@
 [o] Automatic Updates
 [o] Version releases
 [o] Tags for prs
+[o] testing
