@@ -1,2 +1,0 @@
-"use strict";(()=>{function i(){let t=document.querySelector("#id");if(t)t.style.display="none";else{let e=document.createElement("iframe");e.srcdoc=`<h1>Iframe Element</h1> 
-    <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>`,e.width="400px",e.height="200px",e.id="chatgpt",document.querySelector("body")?.append(e)}}function n(){let t=document.querySelector("body"),e=t?.lastChild;e&&t?.removeChild(e)}document.addEventListener("load",i);document.addEventListener("keydown",t=>{t.code==="Escape"&&n()});})();
