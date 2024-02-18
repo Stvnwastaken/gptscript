@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* If transpiling with TypeScript: */
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "build",
+    "sourceMap": true,
+
+    /* If your code runs in the DOM: */
+    "lib": ["ESNext", "dom", "dom.iterable"]
+
+  }
+}
+
+

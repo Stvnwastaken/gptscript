@@ -1,0 +1,25 @@
+{
+  "name": "gptscript",
+  "type": "module",
+  "module": "./src/index.ts",
+  "scripts": {
+    "format": "bunx @biomejs/biome format --write .",
+    "lint": "bunx @bioimejs/biome lint .",
+    "compile": "bun run scripts/compile.ts",
+    "build": "bun run esbuild --bundle src/index.ts --outfile=build/build.js --minify",
+    "prod": "bun run scripts/obfuscate.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/bun": "latest",
+    "chalk": "^5.3.0",
+    "javascript-obfuscator": "^4.1.0"
+  },
+  "dependencies": {
+    "@types/web": "^0.0.139",
+    "esbuild": "^0.20.0"
+  }
+}
