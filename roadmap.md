@@ -1,11 +1,14 @@
 # Roadmap for fixing bugs, closing issues, optimization, features
 
+## Ranked by priority
+
 ### [-] - in progress, [x] - completed, [o] - have not started
 
-[o] Automatic Updates
+[o] actually integrate chatgpt
 [o] Version releases
-[o] Tags for prs
 [o] testing
-[o] ci/cd
-[o] releases via scripts
 [o] server and db tracking
+[o] releases via scripts
+[o] Automatic Updates
+[o] ci/cd
+[o] gh pages docs
